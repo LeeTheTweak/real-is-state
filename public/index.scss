@@ -1,3 +1,178 @@
 @charset "utf-8";
 @import "../node_modules/bulma/bulma.sass";
+@import "../public/fonts.scss";
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: auto 0;
+    padding: 0;
+}
+
+.contents-wrapper {
+    padding: 18px;
+}
+/******************* The Header Section ********************/
+header {
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: white;
+    position: fixed;
+    width: 100%;
+    a {
+        color: $softgrey;
+        font-weight: bold;
+        padding: 8px;
+        transition: .1s ease-in-out;
+        &:hover {
+            background: $truliaBlue;
+            color: white;
+            border-radius: 7px;
+        }
+    }
+    /******************* The Left Navigation *****************/
+    .left-nav-area {
+        margin: 0;
+        flex-grow: 1;
+        .site-title {
+            font-family: 'Bree Serif';
+            font-size: 1.5em;
+            &:hover {
+                color: $softgrey;
+                background: none;
+            }
+        }
+    }
+    /****************** The Right Navigation ******************/
+    .right-nav-area {
+        margin: auto;
+        a {
+            position: relative;
+            top: 6px;
+        }
+        button {
+            transition: .1s ease-in-out;
+            margin: auto;
+            &:hover {
+                background: #f0f0f0;
+            }
+        }
+        .fas {
+            position: relative;
+            top: 7px;
+            font-size: 25px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+/************* END OF HEADER SECTION ************************/
+
+/************* JUMBOTRON SECTION *******************/
+
+
+.jumbotron-section {
+    margin-top: 2.5%;
+    margin-bottom: 30px;
+    padding: 200px;
+    border-radius: 12px;
+    background-image: url(https://d3w216np43fnr4.cloudfront.net/1920x1080/6163/77857/1.jpg?version=1528215004);
+    background-repeat: no-repeat;
+    background-position: 100% 55%;
+    background-size: cover;
+
+    .discover-area {
+        text-align: center;
+        h1 {
+            font-size: 3.5em;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 5px 20px black;
+            margin-bottom: 25px;
+        }
+    }
+
+    .discover-search-button-area {
+        margin: 0;
+        // The Discover Buttons
+        button {
+            width: 100px;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            font-family: 'Roboto';
+            font-weight: bold;
+            font-size: 1.3em;
+            background: rgba(58, 58, 58, 0.418);
+            transition: .2s ease-in-out;
+            -moz-transition: .2s ease-in-out;
+            -o-transition: .2s ease-in-out;
+            -webkit-transition: .2s ease-in-out;
+            &:hover {
+                background: white;
+                color: $truliaBlue;
+            }
+        }
+    }
+
+.discover-search-area {
+    text-align: center;
+        input {
+            width: 500px;
+            height: 55px;
+            font-size: 23px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        button {
+            width: 55px;
+            height: 55px;
+            border: none;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-left: -6px;
+            background: $truliaBlue;
+            color: white;
+            .fas {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+/************* END OF JUMBOTRON SECTION ****************/
+
+
+/************* COVID 19 TIP ****************************/ 
+
+.covid19-tip-section {
+    padding: 30px;
+    box-shadow: 1px 1px 5px #dadada;
+    border-radius: 8px;
+    width: 900px;
+    margin: auto;
+    
+    .covid19-tip {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        .fas {
+            margin: 5px;
+            font-size: 60px;
+            color: $truliaBlue;
+        }
+        p {
+            margin: auto 0 auto 0;
+        }
+    }
+}
+
+/************* END OF COVID 19 TIP *********************/

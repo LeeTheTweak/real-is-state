@@ -14,7 +14,7 @@
             <!-- For the left side of the screen navigation -->
             <div class="left-nav-area">
                 <!-- The site title -->
-                <a href="index.html">real-is-state</a>
+                <a href="index.html" class="site-title">real-is-state</a>
                 <!-- Title navigation -->
                 <a href="#">Buy</a>
                 <a href="#">Rent</a>
@@ -24,12 +24,14 @@
             <div class="right-nav-area">
                 <a href="#">Saved Homes</a>
                 <a href="#">Saved Searches</a>
-                <button class="button is-outlined"><a href="#">Sign up or Log in</a></button>
+                <button class="button is-outlined">Sign up or Log in</button>
                 <i class="fas fa-bars"></i>
             </div>
         </header>
+
+    <section class="contents-wrapper">
         <!-- Beginning of jumbotron -->
-        <section class="jumbotron-area">
+        <section class="jumbotron-section">
             <div class="discover-area">
                 <h1>Discover your new home<br>you'll love it here</h1>
             </div>
@@ -40,26 +42,26 @@
                 <button class="button">Sold</button>
             </div>
             <!-- The search bar -->
-            <div class="discover-search-area field has-addons">
-                <div class="control">
+            <form action="homes.php" method="POST">
+                <div class="discover-search-area">
                     <input class="input" type="text" placeholder="Search for city, zip code, neighborhood...">
+                    <button><i class="fas fa-search-location"></i></button>
                 </div>
-                <div class="control">
-                    <a class="button is-info">
-                        <i class="fas fa-search-location"></i>
-                    </a>
-                </div>
-            </div>
+            </form>
         </section>
+
+
         <!-- The Covid 19 tip box -->
-        <section class="covid19-tip-area">
+        <section class="covid19-tip-section">
             <div class="covid19-tip">
-                <img src="">
-                <p>How Real-is-State is responding to COVID-19<span><a href="#">Learn more</a></span></p>
+                <i class="fas fa-shield-virus"></i>
+                <p>How Real-is-State is responding to COVID-19<span> <a href="#">Learn more</a></span></p>
             </div>
         </section>
+
+
         <!-- How we can help you -->
-        <section class="how-we-help-area">
+        <section class="how-we-help-section">
             <div class="help-card">
                 <img class="card-help-image" src="#">
                 <p class="help-card-title">Get a home</p>
@@ -76,8 +78,61 @@
                 <p class="help-card-description"></p>
             </div>
         </section>
-        <footer>
 
+        <!-- Explore neighborhoods with boxes for user to scroll through. -->
+        <section class="explore-hoods-section">
+            <div class="explore-description">
+                <h1>Explore neighborhoods on Real-is-State</h1>
+            <p>
+                Dive deep and browse our neighborhood photos. Drone footage,
+                reviews and insights to see if the homes for sale are right for you.
+            </p>
+            </div>
+            <!-- The explore photos -->
+            <div class="explore-photos">
+                
+            </div>
+            <h1>Check a neighborhood</h1>
+            <!-- Another Search Bar -->
+                <div class="explore-search-area field has-addons">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Search for city, zip code, neighborhood...">
+                    </div>
+                    <div class="control">
+                        <a class="button is-info">
+                            <i class="fas fa-search-location"></i>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Guides Section -->
+        <section class="guides-section">
+            <div class="guides-description-area">
+                <h1>Real-is-state Guides</h1>
+                <p>
+                    We have everything you need to know 
+                    when looking for different typeso of homes on sale.
+                </p>
+                <button type="button">See all the guides</button>
+            </div>
+            <div class="guide-clicks-area">
+                <div>
+                    <img src="#">
+                    <h2>Buyer Guides</h2>
+                    <a href="#">How to buy <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+        <footer>
+            <div class="footer-header-area">
+                <p>find <i class="fas fa-map-marker-alt"></i> a place <i class="fas fa-home"></i> you'll love <i class="fas fa-heart"></i> to live</p>
+            </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="src/index.js"></script>
     </body>
 </html>
